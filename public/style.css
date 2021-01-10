@@ -1,56 +1,71 @@
 /* this file is loaded by index.html and styles the page */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@200&display=swap');
+
+.monospace {
+    font-family: monospace;
+}
 
 * {
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
-  margin: 2em 1em;
-  line-height: 1.5em;
+    font-family: "Montserrat";
+}
+nav {
+    background: rgb(0,162, 232);
+    height: 80px;
+    width: 100%;
+}
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-family: "Montserrat";
+}
+nav ul {
+    float: right;
+    margin-right: 80px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 50px;
+}
+nav ul li a {
+    color:white;
+    font-size: 38px;
+}
+button.navbutton {
+    border: 0;
+    color:black;
+    font-size: 38px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: white;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
-  max-width: calc(100% - 5rem);
-  line-height: 1.1;
+@keyframes spinkf {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-form {
-  background-color: #eee;
-  display: grid;
-  grid-gap: 1em;
-  padding: 1em;
-  max-width: 40ch;
+.spin {
+    animation-iteration-count: infinite;
+    animation-name: spinkf;
+    animation-duration: 5s;
 }
 
-input {
-  border: 1px solid silver;
-  display: block;
-  font-size: 16px;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 100%;
-}
-
-form button {
-  background-color: #bbbbf2;
-  border: 2px solid currentColor;
-  border-radius: .25em;
-  cursor: pointer;
-  font-size: inherit;
-  line-height: 1.4em;
-  padding: 0.25em 1em;
-  max-width: 20ch;
-}
-
-form button:hover {
-  background-color: lavender;
-}
-
-footer {
-  margin-top: 3em;
-  padding-top: 1.5em;
-  border-top: 1px solid lightgrey;
+.widget {
+    margin-left: 80%;
+    margin-top: 1em
 }
