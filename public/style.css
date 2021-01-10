@@ -2,70 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@200&display=swap');
 
 .monospace {
-    font-family: monospace;
+	font-family: monospace;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Montserrat";
+	font-family: "Montserrat";
 }
 nav {
-    background: rgb(0,162, 232);
-    height: 80px;
-    width: 100%;
+	background: rgb(0,162, 232);
+	height: 80px;
+	width: 100%;
 }
 label.logo {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-family: "Montserrat";
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-family: "Montserrat";
 }
 nav ul {
-    float: right;
-    margin-right: 80px;
+	float: right;
+	margin-right: 80px;
 }
 nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 50px;
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 50px;
 }
 nav ul li a {
-    color:white;
-    font-size: 38px;
+	color:white;
+	font-size: 38px;
 }
 button.navbutton {
-    border: 0;
-    color:black;
-    font-size: 38px;
-    padding: 0 20px;
-    border-radius: 5px;
-    background-color: white;
+	border: 0;
+	color:black;
+	font-size: 38px;
+	padding: 0 20px;
+	border-radius: 5px;
+	background-color: white;
 }
 
 @keyframes spinkf {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .spin {
-    animation-iteration-count: infinite;
-    animation-name: spinkf;
-    animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-name: spinkf;
+	animation-duration: 5s;
 }
 
 .widget {
-    margin-left: 80%;
-    margin-top: 1em
+	margin-left: 80%;
+	margin-top: 1em
 }
