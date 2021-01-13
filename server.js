@@ -12,11 +12,11 @@ const app = express();
 app.use(express.static("public"));
 
 // https://expressjs.com/en/starter/basic-routing.html
-app.get("/", (request, response) => {
+app.get("/", (_, response) => {
 response.sendFile(__dirname + "/views/index.html");
 });
 
-app.use(function(req,resp,next){
+app.use(function(req,resp){
 	let path = __dirname + req.originalUrl
 	if(fs.existsSync(path)){
 		resp.sendFile(path)
